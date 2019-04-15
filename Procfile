@@ -1,1 +1,1 @@
-eb: python tlg.py
+web: python tlg.py
