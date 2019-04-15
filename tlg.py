@@ -52,7 +52,7 @@ def send_message_fb(recipient_id, response):
     fb_bot.send_text_message(recipient_id, response)
     return "success"
 
-@app.route("/", methods=['POST'])
+@app.route("/", methods=['GET', 'POST'])
 def receive_message():
     if request.method == 'GET':
         """Before allowing people to message your bot, Facebook has implemented a verify token
