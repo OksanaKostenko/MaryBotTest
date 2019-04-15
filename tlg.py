@@ -26,6 +26,7 @@ def send_mess(chat_id, text):
     response = requests.post(URL, data=params)
     return response
 
+#for telegram
 @app.route("/" + token, methods=["POST"])
 def process_update():
     if request.method == "POST":
@@ -51,6 +52,7 @@ def send_message_fb(recipient_id, response):
     fb_bot.send_text_message(recipient_id, response)
     return "success"
 
+#for fb messenger
 @app.route("/", methods=['GET', 'POST'])
 def receive_message():
     if request.method == 'GET':
