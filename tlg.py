@@ -2,7 +2,6 @@ import requests
 import bot
 import misc
 from flask import Flask, request
-import os
 from pymessenger.bot import Bot
 
 token = misc.tlg_token
@@ -80,5 +79,4 @@ def receive_message():
     return "Message Processed"
 
 if __name__ == "__main__":
-#    app.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
     app.run()
