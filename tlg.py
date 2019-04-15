@@ -1,8 +1,10 @@
 import requests
 import bot
+import misc
 from flask import Flask, request
+import os
 
-token = "788723207:AAFv-9HVizlkJZlXzEWWPIPNSLy8njZC4RY"
+token = misc.token
 url = "https://api.telegram.org/bot"
 
 app = Flask(__name__)
@@ -20,7 +22,7 @@ def send_mess(chat_id, text):
     response = requests.post(URL, data=params)
     return response
 
-@app.route("/"+token, methods=["POST"])
+@app.route("/" + token, methods=["POST"])
 def process_update():
     if request.method == "POST":
         data = request.get_json()
@@ -32,6 +34,5 @@ def process_update():
         return "ok!", 200
     return "..."
 
-
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))

@@ -1,1 +1,1 @@
-web: python tlg.py
+web: gunicorn tlg:server 
