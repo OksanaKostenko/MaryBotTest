@@ -20,7 +20,7 @@ def send_mess(chat_id, text):
     response = requests.post(URL, data=params)
     return response
 
-@app.route("/", methods=["POST"])
+@app.route("/"+token, methods=["POST"])
 def process_update():
     if request.method == "POST":
         data = request.get_json()
