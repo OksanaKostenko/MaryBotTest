@@ -1,0 +1,11 @@
+2019-04-13 18:41:50.815686 /// User /// What is algorithm?
+2019-04-13 18:41:50.916686 /// ROBO /// ROBO: spreading misinformation :
+if a text-sending algorithm can pass itself off as a human instead of a chatbot, its message would be more credible.
+2019-04-13 18:47:16.377716 /// User /// bye
+2019-04-13 18:47:16.377716 /// ROBO /// ROBO: Bye-bye, darling!
+2019-04-13 18:48:00.919779 /// User /// bye
+2019-04-13 18:48:00.919779 /// ROBO /// ROBO: See you soon!
+2019-04-13 18:59:45.816722 /// User /// bye
+2019-04-13 18:59:45.816722 /// ROBO /// ROBO: Bye-bye, darling!
+2019-04-13 19:00:24.012795 /// User /// hi
+2019-04-13 19:00:24.012795 /// ROBO /// ROBO: Oh no, that's you...
