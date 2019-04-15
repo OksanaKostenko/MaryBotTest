@@ -1,1 +1,1 @@
-web: gunicorn tlg:server 
+web: gunicorn tlg:app 
